@@ -5,5 +5,8 @@
   },
   "devDependencies": {
     "flow-bin": "^0.42.0"
+  },
+  "dependencies": {
+    "axios": "^0.15.3"
   }
 }
