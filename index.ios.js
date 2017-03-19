@@ -1,11 +1,14 @@
 // Import library to help create Component
 import React from 'react';
-import { Text, AppRegistry } from 'react-native';
-// create Component
+import { AppRegistry } from 'react-native';
+import Header from './src/components/header'
+
+// create Component. Styling goes inside
 const App = () => {
   return (
-    <Text>Some Text</Text>
+    <Header headerText={'Albums'}/>
   );
 };
+
 // render component to device
 AppRegistry.registerComponent('albums', () => App);
