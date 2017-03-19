@@ -12,11 +12,18 @@ class AlbumList extends Component {
      .then(response => this.setState({ albums: response.data }));
   }
 
+  renderAlbums() {
+    // Map function in js. Curly braces are the same as <%%>
+    return this.state.albums.map(album =>
+      // we add a key property so that react can intelligently rerender parts of the list. Key must be unique
+      <Text key={album.title}>{album.title}</Text>);
+  }
+
   // All extenders of component require a method render() that returns some JSX
   render() {
     return (
       <View>
-        <Text>Album List!!!!</Text>
+        {this.renderAlbums()}
       </View>
     );
   };
