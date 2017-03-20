@@ -8,7 +8,7 @@ import AlbumList from './src/components/AlbumList';
 // We wrap all of our components in a view tag because we can only return
 // a single top-level object
 const App = () => (
-  <View>
+  <View style={{flex: 1}}>
     <Header headerText={'Albums'} />
     <AlbumList />
   </View>
